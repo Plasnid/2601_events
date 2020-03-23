@@ -11,9 +11,9 @@
 }
 #controls>div:nth-child(2){
     background: #00ff00;
-    left: 200px;
+    left: 210px;
 }
 #controls>div:nth-child(3){
     background: #0000ff;
-    left: 300px;
+    left: 320px;
 }
