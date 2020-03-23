@@ -1,0 +1,19 @@
+#controls div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top;
+    
+}
+#controls>div:nth-child(1){
+    background: #ff0000;
+    left: 100px;
+}
+#controls>div:nth-child(2){
+    background: #00ff00;
+    left: 200px;
+}
+#controls>div:nth-child(3){
+    background: #0000ff;
+    left: 300px;
+}
