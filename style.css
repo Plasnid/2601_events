@@ -2,8 +2,6 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    top;
-    
 }
 #controls>div:nth-child(1){
     background: #ff0000;
@@ -16,4 +14,29 @@
 #controls>div:nth-child(3){
     background: #0000ff;
     left: 320px;
+}
+#controls>div:nth-child(4){
+    background: #663d39;
+    color: white;
+    left: 430px;
+}
+#controls>div:nth-child(5){
+    background: #3c0470;
+    color: white;
+    left: 540px;
+}
+#controls>div:nth-child(6){
+    background: #d8d804;
+    color: rgb(0, 0, 0);
+    left: 650px;
+}
+#controls>div:nth-child(7){
+    background: #d8d804;
+    color: black;
+    left: 760px;
+}
+#controls>div:nth-child(8){
+    background: #d8d804;
+    color: black;
+    left: 870px;
 }

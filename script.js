@@ -7,10 +7,16 @@ function changeBackground(col){
     let body = document.querySelector("body");
     body.style.backgroundColor = col;
 }
+function fontClick(e){
+    console.log(e.target.dataset.font);
+    let myTitle = document.querySelector("h1");
+    myTitle.style.fontFamily = e.target.dataset.font;
+}
 
 function btnClick(e){
     console.log("the button was clicked");
     console.log(e.target);
+    console.log(e);
     changeBackground(e.target.dataset.colour);
 }
 
@@ -31,7 +37,17 @@ function setupButtonClicks(){
     let btn1 = document.querySelector("#controls>div:nth-child(1)");
     let btn2 = document.querySelector("#controls>div:nth-child(2)");
     let btn3 = document.querySelector("#controls>div:nth-child(3)");
-    let buttons = [btn1, btn2, btn3]
+    let btn4 = document.querySelector("#controls>div:nth-child(4)");
+    let btn5 = document.querySelector("#controls>div:nth-child(5)");
+    let btn6 = document.querySelector("#controls>div:nth-child(6)");
+
+    let font1 = document.querySelector("#controls>div:nth-child(7)");
+    let font2 = document.querySelector("#controls>div:nth-child(8)");
+    let buttons = [btn1, btn2, btn3,btn4,btn5,btn6];
+    let fonties = [font1, font2];
+    for(let i=0;i<fonties.length;i++){
+        fonties[i].addEventListener("click", fontClick);
+    }
     for(let i=0;i<buttons.length;i++){
         buttons[i].addEventListener("click", btnClick);
         buttons[i].addEventListener("mouseenter",enterAction);
@@ -45,5 +61,5 @@ function loadingTime(e){
     initPage();
 }
 
-//listen for the page load
+// *listen for the page load
 document.addEventListener("DOMContentLoaded", loadingTime);
