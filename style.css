@@ -1,8 +1,10 @@
+/** common styles for all our control buttons */
 .control_btns>div{
     width: 100px;
     height: 100px;
     display:inline-block;
 }
+/** styles specific to buttons in certain orders */
 .control_btns>:nth-child(2){
     background: #ff0000;
 }
