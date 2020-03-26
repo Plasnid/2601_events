@@ -46,8 +46,8 @@ function setupButtonClicks(){
     let btn5 = document.querySelector("#colour_controls>:nth-child(6)");
     let btn6 = document.querySelector("#colour_controls>:nth-child(7)");
 
-    let font1 = document.querySelector("#font_controls>div:nth-child(2)");
-    let font2 = document.querySelector("#font_controls>div:nth-child(3)");
+    let font1 = document.querySelector("#font_controls>:nth-child(2)");
+    let font2 = document.querySelector("#font_controls>:nth-child(3)");
 
     let size1 = document.querySelector("#size_controls>:nth-child(2)");
     let size2 = document.querySelector("#size_controls>:nth-child(3)");
