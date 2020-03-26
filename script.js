@@ -77,6 +77,7 @@ function setupButtonClicks(){
         * how could we make this simpler and more reusable?
     */
     for(let i=0;i<coloursBtns.length;i++){
+        // * notice the structure here htmlElement.addEventListener(whatToListenTo, functionToCall)
         coloursBtns[i].addEventListener("click", btnClick);
         coloursBtns[i].addEventListener("mouseenter",enterAction);
         coloursBtns[i].addEventListener("mouseleave", leaveAction);
